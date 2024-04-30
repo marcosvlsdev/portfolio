@@ -1,0 +1,84 @@
+/* Geist Variable, Druk Wide fonte boa
+System-ui
+#875DF4
+ */
+@font-face {
+    font-family: 'negrito';
+    src: url(src/font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'normal';
+    src: url(src/font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Light.otf) format(opentype);
+}
+
+/* colocar todos arquivos da fonte */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #242038;
+    height: 100vh;
+    padding: 100px;
+}
+
+header {
+    background-color: #242038;
+    text-align: center;
+    gap: 20px;
+    height: 80px;
+}
+
+header li{
+    display: inline-block;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 20px 20px;
+    font-family: 'normal';
+    height: 100%;
+    width: 100px;
+    display: block;
+    margin: 0 30px;
+}
+
+header a:hover{
+    border-bottom: solid 2px #0ABF04;
+    color: #0ABF04;
+}
+
+.MV {
+    font-family: 'negrito';
+}
+
+.home {
+    min-height: 70vh;
+}
+
+.texto p {
+    color: white;
+    font-family: 'normal';
+    font-size: 1.5em;
+    
+}
+
+.texto h2 {
+    color: white;
+    font-family: 'normal';
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.texto h2 strong {
+    color: #0ABF04;
+    font-family: 'negrito';
+    font-size: 2.3em;
+    display: block;
+}
+
