@@ -65,13 +65,13 @@ header a:hover{
 
 .MV {
     font-family: 'negrito';
-    transition-duration: 0.5s;
+    transition-duration: 0.7s;
 }
 
 .MV:hover{
     color: #0ABF04;
     border: none;
-    transform: scale(2);
+    transform: scale(2.1);
     transition-duration: 0.6s;
 }
 
@@ -129,6 +129,7 @@ section {
     color: #0ABF04;
     font-size: 3.7em;
     font-family: 'negrito';
+    margin-bottom: 80px;
 }
 
 .sobremim p {
@@ -141,17 +142,19 @@ section {
 }
 
 .sobremim p a {
-    color: #895DF5;
+    background-image: linear-gradient(to right, #9702D7, #D9008B,#EB1749,#F5B00A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
     font-family: 'negrito';
     text-decoration: none;
     font-size: 1.3em;
-    padding: 5px 5px 1px 0;
+    padding: 5px 5px 0 0;
 }
 
 .sobremim p a:hover {
-    color: #EF16F2;
-    border-bottom: 3px solid #EF16F2;
-    transition-duration: 0.3s;
+    border-bottom: 2px solid #D9008B;
 }
 
 .sobremim strong {
@@ -166,20 +169,24 @@ section {
     display: inline-block;
     font-size: 4em;
     margin: 5px 50px 0 0;
-    transition-duration: 0.5s;
 }
 
 .redessociais a {
     color: #0ABF04;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
-.redessociais li:hover {
-    transition-duration: 0.8s;
+.redessociais #github a:hover{
+    color: black;
 }
 
-.redessociais a:hover{
-    color: #40ff50;
+.redessociais #instagram a:hover{
+    background-image: linear-gradient(45deg, #9702D7, #D9008B,#EB1749,#F5B00A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transition-duration: 1s;
 }
 
 .ferramentas h2{
@@ -200,6 +207,7 @@ section {
 .ferramentas li{
     padding: 30px;
     height: 100%;
+    transition-duration: 0.3s;
 }
 
 .ferramentas a{
@@ -209,13 +217,33 @@ section {
     text-decoration: none;
     border: 1px solid #0ABF04;
     display: block;
-    
     margin: 0 auto 100px;
     
 }
 
 .ferramentas li:hover {
     background-color: rgba(0, 0, 0, 0.178);
+    transition-duration: 0.3s;
+}
+
+#html:hover{
+    color: #DD4B25;
+    transition-duration: 0.3s;
+}
+
+#js:hover{
+    color: #E8D34D;
+    transition-duration: 0.3s;
+}
+
+#php:hover{
+    color: #4D598E;
+    transition-duration: 0.3s;
+}
+
+#css:hover{
+    color: #136DB0;
+    transition-duration: 0.3s;
 }
 
 .ferramentas h3 {
