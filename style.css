@@ -26,7 +26,7 @@ body {
 }
 
 .tudo {
-    background-color: #242038f7;
+    background-color: #242038ea;
 }
 
 main {
@@ -35,11 +35,13 @@ main {
 }
 
 header {
-
+    backdrop-filter: blur(5px);
     text-align: center;
     gap: 20px;
-    height: 90px;
+    height: max-content;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 header li{
@@ -49,11 +51,10 @@ header li{
 header a{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 20px 20px;
+    font-size: 1.3em;
+    padding: 30px 20px;
     font-family: 'normal';
     height: 100%;
-    width: 100px;
     display: block;
     margin: 0 30px;
 }
@@ -71,7 +72,7 @@ header a:hover{
 .MV:hover{
     color: #0ABF04;
     border: none;
-    transform: scale(2.1);
+    transform: scale(2);
     transition-duration: 0.6s;
 }
 
@@ -89,6 +90,7 @@ section {
     font-size: 2.7em;
     margin: 40px 0;
     display: block;
+    line-height: 10vh;
 }
 
 .texto h1 strong {
@@ -124,6 +126,53 @@ section {
     transition-duration: 0.5s;
 }
 
+.projetos  {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.trabalhos {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.projeto {
+    flex-basis: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.projeto .descricao {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    padding: 70px 10px;
+    color: white;
+}
+
+.projeto:hover .descricao{
+    display: block;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .sobremim h2 {
     text-align: center;
     color: #0ABF04;
@@ -136,7 +185,6 @@ section {
     font-family: 'normal';
     color: white;
     font-size: 1.8em;
-    width: 50%;
     margin: 30px 0;
     line-height: 1.8em;
 }
@@ -181,7 +229,7 @@ section {
 }
 
 .redessociais #instagram a:hover{
-    background-image: linear-gradient(45deg, #9702D7, #D9008B,#EB1749,#F5B00A);
+    background-image: linear-gradient(135deg, #9702D7, #D9008B,#EB1749,#F5B00A);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -206,8 +254,9 @@ section {
 
 .ferramentas li{
     padding: 30px;
-    height: 100%;
     transition-duration: 0.3s;
+    
+    text-align: center;
 }
 
 .ferramentas a{
@@ -228,22 +277,18 @@ section {
 
 #html:hover{
     color: #DD4B25;
-    transition-duration: 0.3s;
 }
 
 #js:hover{
     color: #E8D34D;
-    transition-duration: 0.3s;
 }
 
 #php:hover{
     color: #4D598E;
-    transition-duration: 0.3s;
 }
 
 #css:hover{
     color: #136DB0;
-    transition-duration: 0.3s;
 }
 
 .ferramentas h3 {
@@ -251,7 +296,7 @@ section {
 }
 
 svg {
-    height: 200px;
+    height: 20vh;
 }
 
 svg:hover{

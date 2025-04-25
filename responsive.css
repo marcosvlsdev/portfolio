@@ -1,0 +1,30 @@
+@media (max-width: 1600px) {
+    /* diminuir coluna das linguagens */
+    
+}
+
+@media (max-width: 1100px) {
+    /* -1 coluna de linguagens 
+       -arrumar navbar
+       -arrumar h1
+    */
+}
+
+@media (max-width: 800px) {
+    /* display columns no sobre mim */
+    /* .ferramentas ul {
+        columns: 1;
+    }
+
+    .ferramentas a{
+        width: 90%;
+    }
+
+    svg {
+        height: 150px;
+    }
+
+    h3 {
+        font-size: 7vw;
+    } */
+}
